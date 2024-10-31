@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Moedas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<h1>Conversor de Moedas</h1>
+<form id="currency-form">
+<!-- Entrada de valor -->
+<div class="form-control">
+<label for="amount">Valor a ser convertido:</label>
+<input type="number" id="amount" placeholder="Insira o valor" required>
+</div>
+<!-- Seleção de moeda de origem -->
+<div class="form-control">
+<label for="from-currency">Moeda de origem:</label>
+<select id="from-currency" required>
+<option value="USD">Dólar (USD)</option>
+<option value="EUR">Euro (EUR)</option>
+<option value="BRL">Real (BRL)</option>
+</select>
+</div>
+<!-- Seleção de moeda de destino -->
+<div class="form-control">
+<label for="to-currency">Moeda de destino:</label>
+<select id="to-currency" required>
+<option value="USD">Dólar (USD)</option>
+<option value="EUR">Euro (EUR)</option>
+<option value="BRL">Real (BRL)</option>
+</select>
+</div>
+<!-- Botão de conversão -->
+<button type="submit">Converter</button>
+<button type="reset" id="reset">Limpar</button>
+</form>
+<!-- Exibição do resultado -->
+<div id="result">
+<p id="conversion-result"></p>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+ 
