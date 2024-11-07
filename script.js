@@ -27,7 +27,7 @@ document.getElementById("currencyform").addEventListener('submit', async functio
        const convertedValue = valor * exchangeRate; // Multiplica o valor que o usuário inseriu pelo valor consumido da API.
 
        const conversao = document.getElementById('result');
-       conversao.textContent = `Resultado: ${convertedValue.toFixed(2)} ${paraMoeda}`; // Mostra o resultado para o usuário.
+       conversao.textContent = `Resultado: ${convertedValue.toFixed(2)} ${paraMoeda}`; // Mostra o resultado para o usúario
    }else{
        alert('Não foi possível buscar o valor da cotação!');
    }
